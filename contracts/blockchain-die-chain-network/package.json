@@ -9,12 +9,8 @@
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/blockchain-die-chain-network.bna",
     "pretest": "npm run lint",
     "lint": "eslint .",
-   /* "postlint":"npm run licchk",
-    "licchk": "license-check",
-    "postlicchk":"npm run doc",
-    "doc":"jsdoc --pedantic --recurse -c jsdoc.json",*/
     "test": "nyc mocha -t 0 test/*.js && cucumber-js"
-    "deploy": "./scripts/deploy.sh"
+    
   },
   "repository": {
     "type": "git",
